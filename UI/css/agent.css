@@ -1,12 +1,12 @@
 
 @import url('modal.css');
-@font-face{
-    src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
-    font-family: Berlin-sans;
-}
+@font-face {
+    src: url("../font/MiriamLibre-Regular.ttf");
+    font-family: MiriamLibre;
+  }
 body{
     margin: 0;
-    font-family: Berlin-sans;
+    font-family: MiriamLibre;
     background: white;
 }
 a{
@@ -29,7 +29,7 @@ main{
     height: 78%;
 }
 .post-item{
-    
+    font-family: MiriamLibre;
         background: #3c281d75;
         /* margin-bottom: 20px; */
         padding: 20px;
@@ -60,15 +60,31 @@ main h1, main h2{
     font-size:20px;
     text-decoration: underline;
 }
-.form-box{
-    padding-top: 270px;
+label{
+    font-size: 20px;
+    font-family: MiriamLibre;
+
+}
+.form-button{
+    margin: 10px;
+    width:50%;
+    border-radius: 12px;
+    padding: 14px 40px;
+    font-family: MiriamLibre;
+    background: linear-gradient(to right, #181818, #955f2d);
+    line-height: 1.4em;
+    color: white;
+    outline: none;
+    box-shadow: 0 7px 21px #d2d2d2;
+    border: none;
+    font-size: 30px;
 }
 .create-post{
     margin-top: 70px;
-    font-family: Berlin-sans;
-    color: #000;
+    font-family: MiriamLibre;
+    color: white;
     line-height: 1.4em;
-    background: linear-gradient(to right, #f4b56a, #fdf598);
+    background:linear-gradient(to right, #181818, #955f2d);
     outline: none;
     box-shadow: 0 7px 21px #d2d2d2;
     border: none;

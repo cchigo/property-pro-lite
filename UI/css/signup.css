@@ -1,12 +1,19 @@
+@font-face {
+    src: url("../font/MiriamLibre-Regular.ttf");
+    font-family: MiriamLibre;
+  }
+  body{
+      font-family: MiriamLibre;
+  }
 main{
     min-height: 488px;
     padding: 25px;
     
 }
 .container{
-    padding-top: 150px;
+    
     width:80%;
-    margin:0 auto;
+    
     display:flex;
 }
 .container-item{
@@ -43,10 +50,10 @@ input.form-control{
     width:50%;
     border-radius: 12px;
     padding: 14px 40px;
-    font-family: Berlin-sans;
-    background: linear-gradient(to right, #f4b56a, #fdf598);
+    font-family:  MiriamLibre;
+    background:linear-gradient(to right, #181818, #955f2d);
     line-height: 1.4em;
-    color: #000;
+    color: white;
     outline: none;
     box-shadow: 0 7px 21px #d2d2d2;
     border: none;
