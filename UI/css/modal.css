@@ -1,3 +1,7 @@
+@font-face {
+  src: url("../font/MiriamLibre-Regular.ttf");
+  font-family: MiriamLibre;
+}
 .accept-btn{
     font-family: Berlin-sans;
     width:110px;

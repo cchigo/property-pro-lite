@@ -196,18 +196,21 @@ const markAsSold = (id) =>{
   }
 }
 
-const filterCategory = () =>{
-  let input, filter, post_items, a, i;
+//for searching
+
+const filterCategory = () => {
+  let input ,filter,post_items, text;
   input = document.getElementById("search_input");
   filter = input.value.toUpperCase();
   post_items = document.getElementsByClassName("post-item");
 
   for (let post_item of post_items) {
     text = post_item.getElementsByTagName("h3")[0];
-    if (text.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      post_item.style.display = "";
-    } else {
+    if(text.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      post_item.style.display ="";
+    } else{
       post_item.style.display = "none";
     }
   }
-}
+
+};

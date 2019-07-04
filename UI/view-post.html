@@ -27,14 +27,20 @@
   
        
 
-    <main id="main-div">
-        
-            
-       
+    <main id="main-div"> 
         <div class=main-content>
+
         
             <div>
                 <div class="align-center posts">
+                    <h2 class="align-center">Latest deals!!</h2>
+<!-- search field -->
+                        <div class="search-field align-center">
+                            <input id="search_input" onkeyup="filterCategory()" type="text" title="Search Latest deals"
+                            placeholder="search by category e.g 2 bedroom, miniflat etc">
+
+                        </div>
+
                     <div class="post-item" onclick="openViewPostModal()">
                         <img src="./images/home-2112652_1920.jpg" alt="advert1">
                         <div>
@@ -148,5 +154,6 @@
 </div>  
 
     <script src="./js/agent.js"></script>
+    
 </body>
 </html>
