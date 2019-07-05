@@ -1,4 +1,5 @@
-var express = require('express');
+import express from 'expresss';
+let express = require('express');
 var router = express.Router();
 
 let index = require('../controllers/index');
