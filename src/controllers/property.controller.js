@@ -1,24 +1,28 @@
  import propertyService from "../services/prop.service";
+ import model from "../models/property.model";
  
- export default class UserController{
-   static getUsers(req, res){
-     return res.status(200).json({
-       data: {
-         user: model
-       },
-       message: `all users retrieved successfully`
-       status: `SUCCESS`
-     })
+ export default class PropertyController{
+   static async getProperties(req, res){
+    const allProps = await propertyService.getProperties();
+    return res
+      .json({
+        status: 'success',
+        data: allProps,
+        message: `All properties retrieved`
+      })
+      .status(200);
    } 
-   static getUsersById(req, res){
-     return res.json({
-       data: {
-         user: model.[req.params.id]
-       },
-       message: `User with id ${req.params.id} retrieved` 
-       status: `SUCCESS`
-     })
-   }
+   static getAProperty(req, res){
+    const propId = req.params.id;
+    const foundProp = propertyService.getAProperty(propId);
+    return res
+      .json({
+        status: 'success',
+        data: foundProp,
+        message: `Property with id ${req.params.id} retrieved`
+      })
+      .status(200);
+    }
  
  static async addNewProp(req,res){
    const newProp = req.body;
@@ -47,7 +51,7 @@
    const leftProp = propertyService.deleteProp(propId);
    return res.json({
      status: `success`,
-     data = leftProp
+     data : leftProp
    }); 
  }
  }
